@@ -1,0 +1,21 @@
+-> To create a new project
+nest new project_name
+-> To generate a module
+nest g module module_name
+-> To generate a service
+nest g service service_name --no-spec
+-> Nest js also has some npm packages, one of them is config
+npm i @nestjs/config
+
+-> Prisma
+npx prisma init
+npx prisma migrate dev
+
+-> To run a specific service from docker-compose file
+docker-compose up dev-db -d
+
+-> To create a hook that will run before a script in package.package.json
+-> this script will run before test:e2e script in package.json
+-> I'm not using Docker that's why I'm not using it
+- "pretest:e2e": "npm run db:test:restart"
+
